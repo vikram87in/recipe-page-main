@@ -162,6 +162,32 @@ html {
 }
 
 .attribution {
-    margin-block-end: 1rem;
-    padding: 0 2.5rem;
+    margin-block-end: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 376px) {
+    body {
+        background: var(--stone-100-color);
+    }
+
+    .wrapper {
+        max-width: 700px;
+        margin: 90px auto;
+        border-radius: 16px;
+        background: white;
+        /* all these below properties can be used to prevent margin collapsing */
+        /* border: 1px solid white; */
+        /* padding-top: 1px; */
+        /* overflow: hidden; */
+        display: flow-root;
+    }
+
+    .image-omelette {
+        margin: 36px auto;
+        border-radius: 15px;
+        max-width: 90%;
+        object-fit: fill;
+        display: block;
+    }
 }
